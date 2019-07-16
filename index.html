@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logopage.png">
+         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        
+        <title>INTELLIGENCIA | Multimedia Content Management System</title>
+    </head>
+    <body>
+          <div class="overlay">
+            <h1>INTELLIGENCIA</h1>
+      </div>
+        
+        <nav class="nav">
+            <div class="header__logo">
+            <img src="img/logo.png" alt="logo" class="header__logo__size">
+            <h3 class="header__logo_text">INTELLIGENCIA</h3>
+            </div>
+            <ul class="Header__fa-ul">
+                    <li><a href="#" class="Header__list-group-item"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#" class="Header__list-group-item"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#" class="Header__list-group-item"><i class="fa fa-facebook" ></i></a></li>
+                
+          </ul>
+         <div class="scroll-line"></div>
+          </nav>
+          
+         <header class="header">
+            
+             <div class="header__text">
+            
+                 <h1 class="header__text-big">The size of multimedia archive is increasing considerably.</h1>
+                <p class="header__text-small">
+            over 350 24-hours news TV channels around the world.<br>
+            300 hours of video are uploaded to Youtube every minute!<br>
+            500 milion Tweets send each day!<br>
+                    
+                </p> 
+
+            <!-- How to efficiently access to a given information in large-scale multimedia databases? -->
+           </div>
+             
+            <div class="header__image_pple">
+             <img src="img/pple.png" alt="AI" class="header__image_pplepng">
+                
+             
+             </div>
+             
+        
+             <button class="button">
+	Explore More !
+	<div class="button__horizontal"></div>
+	<div class="button__vertical"></div>
+</button>
+
+        
+        
+        </header>
+   
+     
+               
+        <section class="first__section">
+             
+            <div class="first__sction-bg1"></div>
+             
+            <div class="header__texto gazah">
+                 <span class="header__text-small-sm">
+                    
+                    </span>
+             </div>
+            
+                 
+            
+            
+            
+        </section>
+       
+        <div style="height: 1500px;"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+         <script type="text/javascript">
+
+      TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+      })
+             
+     $(window).scroll(function() {
+     var wintop = $(window).scrollTop(), docheight =
+
+     $(document).height(), winheight = $(window).height();
+     var scrolled = (wintop/(docheight-winheight))*100;
+
+     $('.scroll-line').css('width', (scrolled + '%'));
+});
+
+      </script>
+        
+    </body>
+</html>

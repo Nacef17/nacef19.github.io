@@ -1,0 +1,368 @@
+/*
+https://colorhunt.co/palette/134510
+
+*/
+* ,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    /*62.5 =10px*/
+}
+
+body{
+    color: #777;
+    font-family: "lato" , sans-serif;
+    
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    
+}
+
+
+
+.nav{
+    
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 2;
+     width: 100%;
+     background: #fff;
+     border-bottom: 1px solid rgba(54, 78, 104, 0.3);
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); 
+}
+
+.scroll-line {
+    margin-top: 3.5rem;
+     height: 2px;
+     margin-bottom: -2px;
+     background: rgba(19, 34, 56, 0.5);
+     width: 0%;
+}
+
+
+.overlay {
+      color: black;
+      font-family: Poppins , serif;
+      z-index: 4;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      top: 0%:
+}
+
+.overlay h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      font-weight: bolder;
+      letter-spacing: 1.2rem;
+}
+.fa {
+    margin: 1rem 0px;
+    color:#364e68;
+    font-size: 1.5rem;
+}
+
+.Header__fa-ul li {
+    display: inline-block;
+    float: right;
+    
+    }
+.fa-youtube{
+    padding-right: 12rem;
+    padding-left: 20rem;
+}
+.fa-facebook{
+    padding-left: 0 !important;
+    
+}
+.fa-instagram{
+    padding-left: 20rem;
+}
+
+
+
+.header__logo {
+    float: left;
+    margin: 0.5rem 0px;
+    
+   
+    
+    
+    
+    
+}
+
+.header__logo__size {
+    height: 2rem;
+    padding-left: 12rem;
+    
+}
+
+.header__logo_text {
+   display: inline-block;
+    padding-left: 5px;
+    font-family: Poppins , serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    transform: translate(0px,-5px);
+   
+    
+    
+    
+}
+
+.header{
+    background-color: #fff;
+    height: 95vh;
+    position: relative;
+    max-width: 95vw;
+    
+}
+.header__text {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    max-width: 50rem;
+    z-index: 1;
+    
+}
+.header__text-big{
+    color: #98ccd3;
+    font-size: 4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    animation: LTR 1s ease-out;
+    animation-delay: 2.1s;
+    animation-fill-mode: backwards;
+    
+    
+}
+.header__text-small{
+    font-size: 1.6rem;
+    animation: RTL 1s ease-out;
+    animation-delay: 2.1s;
+    animation-fill-mode: backwards;
+    
+    
+}
+
+.header__image_pple {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    animation: FillP 1s ease-out;
+    animation-delay: 2.1s;
+    animation-fill-mode: backwards;
+}
+
+.header__image_pplepng {
+    height: 50rem;
+    
+    
+}
+.button {
+    position: absolute;
+     top:70%;
+    left: 41%; 
+    animation: btnup 1s ease-out;
+    animation-delay: 2.1s;
+    animation-fill-mode: backwards;
+}
+.button {
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  padding: 1.5em 3em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  color: #98ccd3;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background .8s ease;
+}
+.button:hover {
+  background: rgba(100, 0, 0, 0.03);
+}
+.button__horizontal, .button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  transition: -webkit-transform .8s ease;
+  transition: transform .8s ease;
+  transition: transform .8s ease, -webkit-transform .8s ease;
+  will-change: transform;
+}
+.button__horizontal::before, .button__vertical::before {
+  content: '';
+  position: absolute;
+  border: inherit;
+}
+.button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+.button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+
+
+/*--------------- Section 1 -----------------*/
+
+.gazah{
+     margin: 0 10rem;
+   
+}
+
+.first__section{
+    
+    
+ 
+    
+    
+}
+
+.first__sction-bg1{
+       background-image: url(../img/midlle.png);
+    background-size: cover;
+    height: 600px;
+    transform: translateY(-200px);
+    margin: 0 ;
+    background-position: center;
+    animation: opaci 1s ease-out;
+    animation-delay: 2.1s;
+    animation-fill-mode: backwards;
+    
+}
+
+.header__texto{
+    
+    position: absolute;
+    top: 90%;
+    max-width: 500px;
+}
+
+.header__text-small-sm{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #364e68;
+    text-transform: uppercase;
+    
+    animation: RTL 1s ease-out;
+    animation-delay: 2.1s;
+    animation-fill-mode: backwards;
+    
+    
+}
+
+
+
+@keyframes LTR {
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        transform: translateX(1rem);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes RTL {
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80%{
+        transform: translateX(-1rem);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes FillP {
+    0%{
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+       100%{
+        opacity: 1;
+           transform: translateY(0);
+    }
+}
+@keyframes btnup{
+       0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    80%{
+        transform: translateY(1rem);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+@keyframes opaci {
+    0%{
+        opacity: 0;
+       
+    }
+       100%{
+        opacity: 1;
+         
+    }
+}
